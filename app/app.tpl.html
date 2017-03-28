@@ -1,0 +1,38 @@
+<!--NavComponent-->
+<div class="container">
+    <div class="row">
+        <nav class="navbar navbar-inverse">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myMenu" aria-expanded="false">                            
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                <a class="navbar-brand" href="#">RateGain !!</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="myMenu">
+                <ul class="nav navbar-nav">
+                    <li *ngFor="#nav of navItem">
+                        <a [routerLink]="[nav.value]">
+                            <span class="{{nav.icon}}"></span>
+                            <span>{{nav.text}}</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-md-2">
+            // for side bar
+        </div>
+        <div class="col-lg-10 col-md-10">
+            <h4>for rest of the body</h4>
+            <router-outlet>
+
+            </router-outlet>
+
+        </div>
+    </div>

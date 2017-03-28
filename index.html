@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Bootstrap 101 Template</title>    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+     <!-- 1. Load libraries -->
+    <!-- 1.1. Polyfills for browser incompatibility -->
+    <!-- 1.2. SystemJS for importing dependencies when required -->
+    <!-- 1.3. RxJS requirement for AngularJS -->
+    <!-- 1.4. AngularJS for other features -->
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/router.js"></script>
+
+    <!-- 2. Configure SystemJS and Import to associate the app to view -->
+    <script>
+        System.config({
+        packages: {
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+
+      //just like calling  main method in c# java c++
+      //bootstraping ngular2 application
+      System.import('app/boot')
+            .then(null, console.error.bind(console));
+    </script>
+   
+
+</head>
+
+<body>  
+        <app-comp></app-comp> 
+  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+
+<!--<div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">1</div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">1</div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">1</div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">1</div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">1</div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">1</div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">1</div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">1</div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">1</div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">1</div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">1</div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">1</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-1">Ajay</div>
+            <div class="col-lg-1 col-md-1 col-sm-1">Shankar</div>
+            <div class="col-lg-1 col-md-1 col-sm-1">Bhardwaj</div>
+            <div class="col-lg-1 col-md-1 col-sm-1">Deepa</div>
+            <div class="col-lg-1 col-md-1 col-sm-1">Vinay</div>
+            <div class="col-lg-1 col-md-1 col-sm-1">Vinay</div>
+            <div class="col-lg-1 col-md-1 col-sm-1">Umar</div>
+            <div class="col-lg-1 col-md-1 col-sm-1">Krishna</div>
+            <div class="col-lg-1 col-md-1 col-sm-1">Ram</div>
+            <div class="col-lg-1 col-md-1 col-sm-1">Ram Verma</div>
+            <div class="col-lg-1 col-md-1 col-sm-1">Santu</div>
+            <div class="col-lg-1 col-md-1 col-sm-1">Prasad</div>
+        </div>-->
